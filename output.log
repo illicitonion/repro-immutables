@@ -1,0 +1,193 @@
+gen/example/ImmutableValueWithBadReference.java:18: error: <identifier> expected
+  private final <any> set;
+                         ^
+gen/example/ImmutableValueWithBadReference.java:20: error: <identifier> expected
+  private ImmutableValueWithBadReference(Optional<<any>> set) {
+                                                 ^
+gen/example/ImmutableValueWithBadReference.java:20: error: ';' expected
+  private ImmutableValueWithBadReference(Optional<<any>> set) {
+                                                   ^
+gen/example/ImmutableValueWithBadReference.java:20: error: illegal start of type
+  private ImmutableValueWithBadReference(Optional<<any>> set) {
+                                                      ^
+gen/example/ImmutableValueWithBadReference.java:20: error: ';' expected
+  private ImmutableValueWithBadReference(Optional<<any>> set) {
+                                                            ^
+gen/example/ImmutableValueWithBadReference.java:24: error: illegal start of type
+  private ImmutableValueWithBadReference(ImmutableValueWithBadReference original, <any> set) {
+                                                                                  ^
+gen/example/ImmutableValueWithBadReference.java:24: error: illegal start of expression
+  private ImmutableValueWithBadReference(ImmutableValueWithBadReference original, <any> set) {
+                                                                                        ^
+gen/example/ImmutableValueWithBadReference.java:32: error: <identifier> expected
+  public Optional<<any>> getSet() {
+                 ^
+gen/example/ImmutableValueWithBadReference.java:32: error: <identifier> expected
+  public Optional<<any>> getSet() {
+                      ^
+gen/example/ImmutableValueWithBadReference.java:32: error: invalid method declaration; return type required
+  public Optional<<any>> getSet() {
+                         ^
+gen/example/ImmutableValueWithBadReference.java:41: error: illegal start of type
+  public final ImmutableValueWithBadReference withSet(<any> value) {
+                                                      ^
+gen/example/ImmutableValueWithBadReference.java:41: error: illegal start of expression
+  public final ImmutableValueWithBadReference withSet(<any> value) {
+                                                            ^
+gen/example/ImmutableValueWithBadReference.java:42: error: illegal start of expression
+    <any> newValue = Objects.requireNonNull(value, "set");
+          ^
+gen/example/ImmutableValueWithBadReference.java:42: error: illegal start of expression
+    <any> newValue = Objects.requireNonNull(value, "set");
+                   ^
+gen/example/ImmutableValueWithBadReference.java:42: error: ';' expected
+    <any> newValue = Objects.requireNonNull(value, "set");
+                            ^
+gen/example/ImmutableValueWithBadReference.java:53: error: illegal start of type
+  public final ImmutableValueWithBadReference withSet(Optional<? extends <any>> optional) {
+                                                                         ^
+gen/example/ImmutableValueWithBadReference.java:53: error: illegal start of expression
+  public final ImmutableValueWithBadReference withSet(Optional<? extends <any>> optional) {
+                                                                              ^
+gen/example/ImmutableValueWithBadReference.java:53: error: > expected
+  public final ImmutableValueWithBadReference withSet(Optional<? extends <any>> optional) {
+                                                                                        ^
+gen/example/ImmutableValueWithBadReference.java:53: error: ')' expected
+  public final ImmutableValueWithBadReference withSet(Optional<? extends <any>> optional) {
+                                                                                         ^
+gen/example/ImmutableValueWithBadReference.java:53: error: ';' expected
+  public final ImmutableValueWithBadReference withSet(Optional<? extends <any>> optional) {
+                                                                                           ^
+gen/example/ImmutableValueWithBadReference.java:54: error: <identifier> expected
+    <any> value = optional.orElse(null);
+        ^
+gen/example/ImmutableValueWithBadReference.java:54: error: <identifier> expected
+    <any> value = optional.orElse(null);
+               ^
+gen/example/ImmutableValueWithBadReference.java:55: error: illegal start of type
+    if (this.set == value) return this;
+    ^
+gen/example/ImmutableValueWithBadReference.java:55: error: illegal start of type
+    if (this.set == value) return this;
+        ^
+gen/example/ImmutableValueWithBadReference.java:55: error: ')' expected
+    if (this.set == value) return this;
+                ^
+gen/example/ImmutableValueWithBadReference.java:55: error: <identifier> expected
+    if (this.set == value) return this;
+                         ^
+gen/example/ImmutableValueWithBadReference.java:55: error: illegal start of type
+    if (this.set == value) return this;
+                           ^
+gen/example/ImmutableValueWithBadReference.java:55: error: as of release 8, 'this' is allowed as the parameter name for the receiver type only, which has to be the first parameter
+    if (this.set == value) return this;
+                                  ^
+gen/example/ImmutableValueWithBadReference.java:56: error: illegal start of type
+    return new ImmutableValueWithBadReference(this, value);
+    ^
+gen/example/ImmutableValueWithBadReference.java:56: error: ';' expected
+    return new ImmutableValueWithBadReference(this, value);
+          ^
+gen/example/ImmutableValueWithBadReference.java:56: error: illegal start of type
+    return new ImmutableValueWithBadReference(this, value);
+                                              ^
+gen/example/ImmutableValueWithBadReference.java:56: error: <identifier> expected
+    return new ImmutableValueWithBadReference(this, value);
+                                                         ^
+gen/example/ImmutableValueWithBadReference.java:64: error: class, interface, or enum expected
+  public boolean equals(Object another) {
+         ^
+gen/example/ImmutableValueWithBadReference.java:66: error: class, interface, or enum expected
+    return another instanceof ImmutableValueWithBadReference
+    ^
+gen/example/ImmutableValueWithBadReference.java:68: error: class, interface, or enum expected
+  }
+  ^
+gen/example/ImmutableValueWithBadReference.java:72: error: class, interface, or enum expected
+  }
+  ^
+gen/example/ImmutableValueWithBadReference.java:79: error: class, interface, or enum expected
+  public int hashCode() {
+         ^
+gen/example/ImmutableValueWithBadReference.java:81: error: class, interface, or enum expected
+    h += (h << 5) + Objects.hashCode(set);
+    ^
+gen/example/ImmutableValueWithBadReference.java:82: error: class, interface, or enum expected
+    return h;
+    ^
+gen/example/ImmutableValueWithBadReference.java:83: error: class, interface, or enum expected
+  }
+  ^
+gen/example/ImmutableValueWithBadReference.java:90: error: class, interface, or enum expected
+  public String toString() {
+         ^
+gen/example/ImmutableValueWithBadReference.java:92: error: class, interface, or enum expected
+    if (set != null) {
+    ^
+gen/example/ImmutableValueWithBadReference.java:94: error: class, interface, or enum expected
+    }
+    ^
+gen/example/ImmutableValueWithBadReference.java:96: error: class, interface, or enum expected
+  }
+  ^
+gen/example/ImmutableValueWithBadReference.java:103: error: class, interface, or enum expected
+  public static ImmutableValueWithBadReference of(Optional<<any>> set) {
+                ^
+gen/example/ImmutableValueWithBadReference.java:105: error: class, interface, or enum expected
+  }
+  ^
+gen/example/ImmutableValueWithBadReference.java:114: error: class, interface, or enum expected
+  public static ImmutableValueWithBadReference copyOf(ValueWithBadReference instance) {
+                ^
+gen/example/ImmutableValueWithBadReference.java:117: error: class, interface, or enum expected
+    }
+    ^
+gen/example/ImmutableValueWithBadReference.java:121: error: class, interface, or enum expected
+  }
+  ^
+gen/example/ImmutableValueWithBadReference.java:127: error: class, interface, or enum expected
+  public static ImmutableValueWithBadReference.Builder builder() {
+                ^
+gen/example/ImmutableValueWithBadReference.java:129: error: class, interface, or enum expected
+  }
+  ^
+gen/example/ImmutableValueWithBadReference.java:139: error: <identifier> expected
+    private <any> set;
+                     ^
+gen/example/ImmutableValueWithBadReference.java:165: error: illegal start of type
+    public final Builder set(<any> set) {
+                             ^
+gen/example/ImmutableValueWithBadReference.java:165: error: illegal start of expression
+    public final Builder set(<any> set) {
+                                   ^
+gen/example/ImmutableValueWithBadReference.java:175: error: illegal start of type
+    public final Builder set(Optional<? extends <any>> set) {
+                                                ^
+gen/example/ImmutableValueWithBadReference.java:175: error: illegal start of expression
+    public final Builder set(Optional<? extends <any>> set) {
+                                                     ^
+gen/example/ImmutableValueWithBadReference.java:175: error: > expected
+    public final Builder set(Optional<? extends <any>> set) {
+                                                          ^
+gen/example/ImmutableValueWithBadReference.java:175: error: ')' expected
+    public final Builder set(Optional<? extends <any>> set) {
+                                                           ^
+gen/example/ImmutableValueWithBadReference.java:175: error: ';' expected
+    public final Builder set(Optional<? extends <any>> set) {
+                                                             ^
+gen/example/ImmutableValueWithBadReference.java:176: error: illegal start of type
+      this.set = set.orElse(null);
+          ^
+gen/example/ImmutableValueWithBadReference.java:177: error: illegal start of type
+      return this;
+      ^
+gen/example/ImmutableValueWithBadReference.java:177: error: ';' expected
+      return this;
+            ^
+gen/example/ImmutableValueWithBadReference.java:185: error: class, interface, or enum expected
+    public ImmutableValueWithBadReference build() {
+           ^
+gen/example/ImmutableValueWithBadReference.java:187: error: class, interface, or enum expected
+    }
+    ^
+64 errors
