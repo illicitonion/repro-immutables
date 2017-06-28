@@ -1,0 +1,25 @@
+<project name="repro" default="compile">
+  <target name="compile" description="compile">
+    <sequential>
+      <get src="http://central.maven.org/maven2/org/immutables/value/2.5.4/value-2.5.4.jar" dest="value-2.5.4.jar" />
+      <get src="http://central.maven.org/maven2/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" dest="ecj-4.6.1.jar" />
+      <delete dir="gen" />
+      <mkdir dir="gen" />
+      <javac srcdir="src"
+	     classpath="value-2.5.4.jar"
+             destdir="gen"
+             includeAntRuntime="no"
+             compiler="org.eclipse.jdt.core.JDTCompilerAdapter"
+             >
+        <compilerarg line="-properties 'org.eclipse.jdt.core.prefs'" />
+        <compilerclasspath>
+          <pathelement location="ecj-4.6.1.jar" />
+        </compilerclasspath>
+        <compilerarg value="-processorpath" />
+        <compilerarg value="value-2.5.4.jar" />
+        <compilerarg value="-s" />
+        <compilerarg value="gen" />
+      </javac>
+    </sequential>
+  </target>
+</project>
